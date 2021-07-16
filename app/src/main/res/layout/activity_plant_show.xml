@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/rv_plant_show_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toRightOf="@id/rv_plant_show_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/rv_plant_show_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식물명" />
+
+        <TextView
+            android:id="@+id/rv_plant_show_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="구매일자"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/rv_plant_show_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메모"
+            android:layout_marginTop="5dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

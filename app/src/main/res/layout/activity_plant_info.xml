@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과명 : " />
+
+        <TextView
+            android:id="@+id/plant_info_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="백합과" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="냄새 : " />
+
+        <TextView
+            android:id="@+id/plant_info_smell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="거의 없음" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="독성 정보 : " />
+
+        <TextView
+            android:id="@+id/plant_info_poison"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="있음" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관리 수준 : " />
+
+        <TextView
+            android:id="@+id/plant_info_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="초보자" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관리요구도 : " />
+
+        <TextView
+            android:id="@+id/plant_info_require"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="낮음(잘 견딤)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="생장속도 : " />
+
+        <TextView
+            android:id="@+id/plant_info_growthRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="보통" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="생육온도 : " />
+
+        <TextView
+            android:id="@+id/plant_info_growthTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16~20도" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="겨울최저온도 : " />
+
+        <TextView
+            android:id="@+id/plant_info_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13도 이상" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/plant_info_layout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="습도 : " />
+
+        <TextView
+            android:id="@+id/plant_info_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="40~70%" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비료 : " />
+
+        <TextView
+            android:id="@+id/plant_info_fertilizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비료를 거의 요구하지 않음" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/plant_info_layout11"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toBottomOf="@id/plant_info_layout10"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="봄 : " />
+
+    <TextView
+        android:id="@+id/plant_info_spring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="흙을 촉촉하게 유지(물에 잠기지 않도록)" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여름 : " />
+
+        <TextView
+            android:id="@+id/plant_info_summer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="흙을 촉촉하게 유지(물에 잠기지 않도록)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가을 : " />
+
+        <TextView
+            android:id="@+id/plant_info_fall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="흙을 촉촉하게 유지(물에 잠기지 않도록)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_info_layout14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="겨울 : " />
+
+        <TextView
+            android:id="@+id/plant_info_winter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="흙을 촉촉하게 유지(물에 잠기지 않도록)" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/plant_info_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닫기"
+        app:layout_constraintTop_toBottomOf="@id/plant_info_layout14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
